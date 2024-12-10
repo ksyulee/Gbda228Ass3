@@ -41,13 +41,15 @@
         div {
     width: 800px; /* Set a fixed width for the text container */
     max-width: 90%; /* Make it responsive for smaller screens */
-    margin: 100px auto 50px; /* Center the container horizontally */
+    margin: 140px auto; /* Center the container horizontally with consistent margin */
     text-align: left; /* Align the text to the left */
     padding: 20px; /* Add internal spacing */
+    clear: both; /* Ensures floats are cleared */
 }
 
 
-        h1, h2, h3 {
+
+     h1, h2, h3 {
             font-family: 'Antic Didone', serif;
         }
 
@@ -61,17 +63,25 @@
 
         h2 {
             font-size: 25px; /* 2.2em equivalent */
-            margin-top: 30px;
+            margin-top: 50px;
           text-align: left;
           
         }
 
         h3 {
             font-size: 25px;
-            margin-top: 20px;
-          text-align: center;
+            margin-top: 100px;
+          text-align: left;
           
         }
+      
+      h4 {
+        max-width: 800px;
+            margin: 5px auto;
+            line-height: 16px;
+            font-size: 18px; /* 1.1em equivalent */
+          text-align: center;
+      }
 
         p {
             max-width: 800px;
@@ -81,6 +91,23 @@
           text-align: left;
            
         }
+      
+      
+      
+#about {
+    text-align: center; /* Center-aligns the overall "About Me" section */
+}
+
+#about h2 {
+    text-align: center; /* Centers the main "About Me" heading */
+}
+
+#about h3, #about p {
+    text-align: left; /* Aligns "Sports," "Music," "Travelling" to the left */
+    margin: 60 auto; /* Keeps content within the centered container */
+    max-width: 800px; /* Optional: Limit text width for readability */
+}
+
 
         footer {
             padding: 30px 0;
@@ -88,6 +115,47 @@
             font-size: 14px; /* 0.9em equivalent */
         
         }
+      
+
+      #home img {
+    display: block; /* Treats the image as a block element */
+    width: 50%; /* Adjust width relative to container */
+    max-width: 300px; /* Limits the image size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers image horizontally */
+    border-radius: 10px; /* Optional: Rounded corners */
+     float: right;
+      
+}
+      
+      #photography img {
+        display: block; /* Treats the image as a block element */
+    width: 100%; /* Adjust width relative to container */
+    max-width: 850px; /* Limits the image size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers image horizontally */
+    float: right;
+      }
+      
+      #projects img {
+        display: block; /* Treats the image as a block element */
+    width: 100%; /* Adjust width relative to container */
+    max-width: 850px; /* Limits the image size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers image horizontally */
+    float: right;
+      }
+      
+      #about img {
+        display: block; /* Treats the image as a block element */
+    width: 50%; /* Adjust width relative to container */
+    max-width: 300px; /* Limits the image size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0px auto; /* Centers image horizontally */
+    
+     float: right;
+      }
+      
     </style>
 </head>
 <body>
@@ -98,11 +166,12 @@
         <a href="#photography">Photography</a>
         <a href="#projects">Projects</a>
         <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <!-- Home Section -->
     <div id="home">
+      <img src="photo of me.png" alt="me">
         <h1>Hello, I'm Ksenia</h1>
         <p>Every person has their story<br> and that is what makes people<br> interesting and complex.</p>
         <p>Designing products and taking photos<br> and videos that tell a story is what I thrive for.</p>
@@ -110,35 +179,46 @@
 
     <!-- Photography Section -->
     <div id="photography">
+      <img src="IMG_6906 2.JPG" alt="climber" style="width: 50%; max-width: 800px; height: auto; float: right; margin: 10px;">
+      
         <h2>Photography</h2>
         <p>Taking pictures is primarily my hobby.</p>
-        <p>I think living in a time that gives us the opportunity<br> to capture and save moments is a blessing.</p>
+        <p>I think living in a time that gives us the<br> opportunity to capture and save moments is a blessing.</p>
+      
+      <img src="Photo1.png" alt="photo">
     </div>
 
     <!-- Projects Section -->
     <div id="projects">
+      <img src="box frame.png" alt="box" style="width: 50%; max-width: 800px; height: auto; float: right; margin: 10px;">
         <h2>Projects</h2>
         <p><strong>Maison Giulia</strong> is one of my most favourite projects I have ever done.</p>
         <p>I made their website (Shopify) and helped design their branding.</p>
         <p>The logo resembles all the ingredients combined that makes Maison Giulia.</p>
         <p>The box was meant to show clean and luxurious but with a touch of fun :)</p>
+       
+      <img src="Group 4.png" alt="web">
+      
     </div>
 
     <!-- About Me Section -->
     <div id="about">
         <h2>About Me</h2>
-        <p>I am a person with many different hobbies and interests.</p>
-        <p>I love to learn and create new experiences for myself.</p>
+        <h4>I am a person with many different hobbies and interests.</h4> 
+        <h4>I love to learn and create new experiences for myself.</h4>
 
         <h3>Sports</h3>
-        <p>Ever since I was a child I have had an active lifestyle. I played tennis professionally and it continues to be the main sport of my life. I currently coach it as well.</p>
+      <img src="sports pic.png" alt="sports">
+        <p>Ever since I was a child I have had an active lifestyle.<br> I played tennis professionally and it continues to be the main sport of my life. <br>I currently coach it as well.</p>
         <p>Apart from tennis I enjoy rock climbing, weight lifting and running.</p>
 
         <h3>Music</h3>
-        <p>Music is a new hobby I picked up. Thank you to the friends that surround me that projected their love for music onto me.</p>
+      <img src="me pic.png" alt="me" style="width: 50%; max-width: 800px; height: auto; float: right; margin: 10px;">
+        <p>Music is a new hobby I picked up. <br>Thank you to the friends that surround me<br> that projected their love for music onto me.</p>
         <p>Currently I am learning the guitar and drums.</p>
 
         <h3>Travelling</h3>
+      <img src="paris pic.png" alt="paris" style="width: 50%; max-width: 800px; height: auto; float: right; margin: 10px;">
         <p>Seeing the world is what I think drives me every day.</p>
         <p>The idea of so many different cultures and lifestyles excite me.</p>
     </div>
